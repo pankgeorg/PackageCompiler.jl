@@ -2,7 +2,7 @@
 
 !!! info
     This section is for people who want to understand PackageCompiler.jl under
-    the hood. It is not required reading to use the pacakge.
+    the hood. It is not required reading to use the package.
 
 In the previous tutorials, we created a custom sysimage and a binary (app) that
 did some simple CSV parsing with an (depending on the exact demands) acceptable
@@ -25,7 +25,7 @@ apps assume some properties of the machine they will run on (like graphics
 drivers if one want to show graphics) but other (implicit) assumptions, like
 embedding absolute paths into source code would make the app almost completely
 non-relocatable since that absolute path is unlikely to exist on another
-machine.  The goal here is to make our app relocatable enough such that if we
+machine. The goal here is to make our app relocatable enough such that if we
 could install and run the same Julia as we use to build the app on the other
 machine, then the app should also run on that machine (with exceptions if some
 of our dependencies impose extra requirements on the machine).
